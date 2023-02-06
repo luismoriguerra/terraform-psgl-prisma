@@ -23,3 +23,8 @@ resource "docker_container" "my-postgres-container" {
   }
 
 }
+
+// output postgres db url
+output "postgres_url" {
+  value = "postgres://postgres:postgres@localhost:5432/testdb"
+}
